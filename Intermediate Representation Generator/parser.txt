@@ -1,0 +1,12 @@
+line: 1 type_specifier	: INT
+line: 1 func_definition->type_specifier MAIN LPAREN RPAREN compound_statement
+line: 2 type_specifier	: INT
+line: 2 declaration_list -> ID
+line: 2 declaration_list -> declaration_list COMMA ID
+line: 2 var_declaration ->type_specifier declaration_list SEMICOLON
+line: 2 statement -> var_declaration
+line: 2 statements -> statement
+line: 5 compound_statement -> LCURL statements RCURL
+line: 5 unit -> func_definition
+line: 5 program -> unit
+line: 7  start -> program

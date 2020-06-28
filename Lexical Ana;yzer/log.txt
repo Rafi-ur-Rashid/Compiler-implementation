@@ -1,0 +1,60 @@
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  
+
+*******************************Line no 1: TOKEN <CONST_CHAR> Lexeme \n found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  
+
+*******************************Line no 1: TOKEN <CONST_CHAR> Lexeme \ found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  
+1-> <#,CONST_CHAR>  
+
+*******************************Line no 1: TOKEN <CONST_CHAR> Lexeme # found
+Line no 1: TOKEN <STRING> Lexeme abcd\
+rafi\
+Elma found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  
+1-> <#,CONST_CHAR>  <a,CONST_CHAR>  
+
+*******************************Line no 1: TOKEN <CONST_CHAR> Lexeme a found
+Line no 1: TOKEN <sLine> Lexeme /this is a comment found
+Line no 2: TOKEN <mLine> Lexeme ** Another */multiple 
+line Comment * found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  
+1-> <#,CONST_CHAR>  <a,CONST_CHAR>  <I,ID>  
+
+*******************************Line no 3: TOKEN <ID> Lexeme I found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  
+1-> <#,CONST_CHAR>  <a,CONST_CHAR>  <I am,ID>  <am,ID>  
+
+*******************************Line no 3: TOKEN <ID> Lexeme am found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  <incomplete,ID>  
+1-> <#,CONST_CHAR>  <a,CONST_CHAR>  <I am incomplete,ID>  <am incomplete,ID>  
+
+*******************************Line no 3: TOKEN <ID> Lexeme incomplete found
+
+ScopeTable# id 1
+0-> <\n,CONST_CHAR>  <\,CONST_CHAR>  <incomplete\
+string,ID>  
+1-> <#,CONST_CHAR>  <a,CONST_CHAR>  <I am incomplete\
+string,ID>  <am incomplete\
+string,ID>  <string,ID>  
+
+*******************************Line no 4: TOKEN <ID> Lexeme string found
+Line no 5: Lexeme 23.45.6 is found as too many decimal pointer error
+Line no 5: Lexeme 67E7.8 is found as ill form number error
+Line no 5: Lexeme 34asd is found as invalid id or number error
+Line no 5: Lexeme 'a  is found as unfinished character error
+Line no 5: TOKEN <STRING> Lexeme fg found

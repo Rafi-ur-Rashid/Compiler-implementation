@@ -1,0 +1,4 @@
+<CONST_CHAR,\n><CONST_CHAR,\><CONST_CHAR,#><STRING,abcd\
+rafi\
+Elma><CONST_CHAR,a><sLine,//this is a comment ><mLine,/** Another */multiple 
+line Comment */><ID,I><ID,am><ID,incomplete><ID,string><STRING,fg>

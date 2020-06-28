@@ -1,0 +1,8 @@
+'\n' '\' '#' "abcd\
+rafi\
+Elma" 'a' //this is a comment 
+/** Another */multiple 
+line Comment */ 
+"I am incomplete\
+string
+ 23.45.6 67E7.8 34asd 'a "fg"
